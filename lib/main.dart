@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Internet Banking Simulator",
+      title: 'Internet Banking Simulator',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -35,17 +33,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Internet Banking Simulator"),
+        title: Text('Internet Banking Simulator'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "You have pushed the button this many times:",
+              'You have pushed the button this many times:',
             ),
             Text(
-              "$_counter",
+              '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
@@ -53,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: "Increment",
+        tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
     );
