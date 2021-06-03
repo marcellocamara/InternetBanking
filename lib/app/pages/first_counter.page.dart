@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'blocs/counter.bloc.dart';
+import '../app.bloc.dart';
 
 /// Created by marcellocamara@id.uff.br on 02/06/2021.
 
-class CounterPage extends StatelessWidget {
+class FirstCounterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Counter'),
+        title: const Text('First page'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('You have pushed the button this many times:'),
-            BlocBuilder<CounterBloc, int>(
+            BlocBuilder<AppBloc, int>(
               builder: (_, state) {
                 return Text(
                   '$state',
@@ -25,6 +25,11 @@ class CounterPage extends StatelessWidget {
                 );
               },
             ),
+            const SizedBox(height: 20),
+            RaisedButton(
+              onPressed: () => Navigator.of(context).pushNamed('/second'),
+              child: Text('Go to second page'),
+            )
           ],
         ),
       ),
@@ -32,15 +37,15 @@ class CounterPage extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           FloatingActionButton(
-            onPressed: () =>
-                context.read<CounterBloc>().add(CounterEvent.increment),
+            heroTag: 'Increment page 1',
+            onPressed: () => context.read<AppBloc>().add(AppEvent.increment),
             tooltip: 'Increment',
             child: const Icon(Icons.add),
           ),
           const SizedBox(height: 10),
           FloatingActionButton(
-            onPressed: () =>
-                context.read<CounterBloc>().add(CounterEvent.decrement),
+            heroTag: 'Decrement page 1',
+            onPressed: () => context.read<AppBloc>().add(AppEvent.decrement),
             tooltip: 'Decrement',
             child: const Icon(Icons.remove),
           ),
