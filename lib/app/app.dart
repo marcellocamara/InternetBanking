@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'app.routes.dart';
 import 'app.theme.dart';
-import 'features/settings/settings.bloc.dart';
-import 'features/settings/settings.state.dart';
+import 'features/settings/bloc/settings.bloc.dart';
+import 'features/settings/bloc/settings.state.dart';
 import 'shared/repositories/local_storage/local_storage.repo.dart';
 
 /// Created by marcellocamara@id.uff.br on 02/06/2021.

@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../app.routes.dart';
 import '../../shared/widgets/custom_text_form_field.ui.dart';
-import 'settings.bloc.dart';
-import 'settings.event.dart';
-import 'settings.state.dart';
+import 'bloc/settings.bloc.dart';
+import 'bloc/settings.event.dart';
+import 'bloc/settings.state.dart';
 
 /// Created by marcellocamara@id.uff.br on 03/06/2021.
 

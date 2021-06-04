@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../settings/settings.bloc.dart';
-import '../settings/settings.state.dart';
+import '../settings/bloc/settings.bloc.dart';
+import '../settings/bloc/settings.state.dart';
 
 /// Created by marcellocamara@id.uff.br on 04/06/2021.
 

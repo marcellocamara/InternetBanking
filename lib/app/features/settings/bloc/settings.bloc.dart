@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../shared/repositories/local_storage/local_storage_contract.repo.dart';
+import '../../../shared/repositories/local_storage/local_storage_contract.repo.dart';
+import '../bloc/settings.state.dart';
 import 'settings.event.dart';
-import 'settings.state.dart';
 
 /// Created by marcellocamara@id.uff.br on 03/06/2021.
 
