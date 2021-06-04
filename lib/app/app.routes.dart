@@ -5,8 +5,8 @@ import 'features/settings/settings.page.dart';
 
 /// Created by marcellocamara@id.uff.br on 03/06/2021.
 
-class AppRoutes {
-  Route onGenerateRoute(RouteSettings routeSettings) {
+abstract class AppRoutes {
+  static Route onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       case '/':
         return CupertinoPageRoute(
