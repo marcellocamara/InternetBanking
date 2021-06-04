@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lottie/lottie.dart';
 
 import '../../../app/app.routes.dart';
 import '../../shared/repositories/local_storage/local_storage.repo.dart';
+import '../../shared/theme/app.assets.dart';
 import 'bloc/splash.bloc.dart';
 import 'bloc/splash.event.dart';
 import 'bloc/splash.state.dart';
@@ -43,10 +45,11 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       body: Container(
         color: Theme.of(context).primaryColor,
-        child: const Center(
-          child: CircularProgressIndicator(
-            backgroundColor: Colors.white,
-            strokeWidth: 3,
+        child: Center(
+          child: Lottie.asset(
+            AppAssets.anim_coin,
+            height: 80,
+            width: 80,
           ),
         ),
       ),
