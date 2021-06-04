@@ -17,6 +17,8 @@ dependencies:
   flutter_bloc: ^6.1.2
   # Cache
   flutter_secure_storage: ^3.3.3
+  # Others
+  lottie: ^0.7.0+1
 
 dev_dependencies:
   # Analysis
@@ -28,9 +30,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/animations/
 
   # fonts:
   #   - family: Schyler
