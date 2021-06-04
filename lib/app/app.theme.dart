@@ -33,18 +33,19 @@ abstract class AppTheme {
   static ButtonThemeData get _buttonTheme {
     return ButtonThemeData(
       height: 48,
+      minWidth: 240,
       textTheme: ButtonTextTheme.primary,
       buttonColor: _primaryColor,
       disabledColor: Colors.grey[400],
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(10),
       ),
     );
   }
 
   static InputDecorationTheme get _inputDecorationTheme {
     var outlineInputBorder = OutlineInputBorder(
-      borderRadius: BorderRadius.circular(15),
+      borderRadius: BorderRadius.circular(10),
       borderSide: const BorderSide(color: Colors.grey),
     );
     return InputDecorationTheme(
@@ -54,12 +55,10 @@ abstract class AppTheme {
       contentPadding: const EdgeInsets.only(
         right: 5,
         left: 15,
-        top: 10,
-        bottom: 10,
       ),
       enabledBorder: outlineInputBorder,
       disabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(10),
         borderSide: BorderSide(color: Colors.grey[400]),
       ),
       focusColor: _primaryColor,
