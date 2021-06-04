@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'app.routes.dart';
-import 'app.theme.dart';
+import 'shared/theme/app.theme.dart';
 import 'features/settings/bloc/settings.bloc.dart';
 import 'features/settings/bloc/settings.state.dart';
 import 'shared/repositories/local_storage/local_storage.repo.dart';

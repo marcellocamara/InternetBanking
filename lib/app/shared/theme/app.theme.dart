@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'app.colors.dart';
+
 /// Created by marcellocamara@id.uff.br on 03/06/2021.
 
 abstract class AppTheme {
-  static const _primaryColor = Color(0xFF449C4C);
-
   /// Light ThemeData / Light ThemeMode
   static ThemeData get themeData => ThemeData(
         brightness: Brightness.light,
         primarySwatch: Colors.green,
-        primaryColor: _primaryColor,
-        accentColor: _primaryColor,
+        primaryColor: AppColors.primaryColor,
+        accentColor: AppColors.primaryColor,
         appBarTheme: _appBarTheme,
         buttonTheme: _buttonTheme,
         inputDecorationTheme: _inputDecorationTheme,
@@ -35,7 +35,7 @@ abstract class AppTheme {
       height: 48,
       minWidth: 240,
       textTheme: ButtonTextTheme.primary,
-      buttonColor: _primaryColor,
+      buttonColor: AppColors.primaryColor,
       disabledColor: Colors.grey[400],
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
@@ -61,7 +61,7 @@ abstract class AppTheme {
         borderRadius: BorderRadius.circular(10),
         borderSide: BorderSide(color: Colors.grey[400]),
       ),
-      focusColor: _primaryColor,
+      focusColor: AppColors.primaryColor,
       border: outlineInputBorder,
     );
   }
