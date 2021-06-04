@@ -85,18 +85,22 @@ class SettingsPage extends StatelessWidget {
                       children: [
                         Expanded(
                           child: OutlineButton(
-                            onPressed: () => Navigator.of(context).pushNamed(
-                              AppRoutes.bank1,
-                            ),
+                            onPressed: state.isCurrentLoading
+                                ? null
+                                : () => Navigator.of(context).pushNamed(
+                                      AppRoutes.bank1,
+                                    ),
                             child: Text('Go to Bank 1'),
                           ),
                         ),
                         const SizedBox(width: 20),
                         Expanded(
                           child: OutlineButton(
-                            onPressed: () => Navigator.of(context).pushNamed(
-                              AppRoutes.bank2,
-                            ),
+                            onPressed: state.isCurrentLoading
+                                ? null
+                                : () => Navigator.of(context).pushNamed(
+                                      AppRoutes.bank2,
+                                    ),
                             child: Text('Go to Bank 2'),
                           ),
                         ),
