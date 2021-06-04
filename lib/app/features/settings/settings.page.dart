@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../app.routes.dart';
 import '../../shared/widgets/custom_text_form_field.ui.dart';
 import 'settings.bloc.dart';
 import 'settings.event.dart';
@@ -75,6 +76,31 @@ class SettingsPage extends StatelessWidget {
                                 ),
                         child: const Text('Save settings'),
                       ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Expanded(
+                          child: OutlineButton(
+                            onPressed: () => Navigator.of(context).pushNamed(
+                              AppRoutes.bank1,
+                            ),
+                            child: Text('Go to Bank 1'),
+                          ),
+                        ),
+                        const SizedBox(width: 20),
+                        Expanded(
+                          child: OutlineButton(
+                            onPressed: () => Navigator.of(context).pushNamed(
+                              AppRoutes.bank2,
+                            ),
+                            child: Text('Go to Bank 2'),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
