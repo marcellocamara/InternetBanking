@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'app/app.widget.dart';
+import 'app/app.dart';
 
 /// Created by marcellocamara@id.uff.br on 02/06/2021.
 
-void main() => runApp(AppWidget());
+void main() => runApp(MainApp());
