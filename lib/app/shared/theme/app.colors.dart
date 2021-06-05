@@ -4,4 +4,5 @@ import 'package:flutter/material.dart';
 
 abstract class AppColors {
   static const primaryColor = Color(0xFF449C4C);
+  static const santander = Color(0xFFCC0000);
 }

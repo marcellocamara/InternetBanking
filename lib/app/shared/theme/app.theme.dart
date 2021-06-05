@@ -17,6 +17,17 @@ abstract class AppTheme {
         inputDecorationTheme: _inputDecorationTheme,
       );
 
+  static ThemeData get santanderThemeData => ThemeData(
+    brightness: Brightness.light,
+    primarySwatch: Colors.red,
+    primaryColor: AppColors.santander,
+    accentColor: AppColors.santander,
+    appBarTheme: _appBarTheme,
+    buttonTheme: _buttonTheme,
+    cardTheme: _cardTheme,
+    inputDecorationTheme: _inputDecorationTheme,
+  );
+
   static AppBarTheme get _appBarTheme {
     return const AppBarTheme(
       elevation: 0,
@@ -45,7 +56,12 @@ abstract class AppTheme {
   }
 
   static CardTheme get _cardTheme {
-    return CardTheme(elevation: 2);
+    return CardTheme(
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5),
+      ),
+    );
   }
 
   static InputDecorationTheme get _inputDecorationTheme {
