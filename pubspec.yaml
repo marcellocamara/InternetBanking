@@ -11,14 +11,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # iOS icons support
+  # Theme & icons & animations
   cupertino_icons: ^1.0.0
+  flutter_svg: ^0.17.4
+  lottie: ^0.7.0+1
   # Stage management
   flutter_bloc: ^6.1.2
-  # Cache
+  # Local cache
   flutter_secure_storage: ^3.3.3
-  # Others
-  lottie: ^0.7.0+1
 
 dev_dependencies:
   # Analysis
