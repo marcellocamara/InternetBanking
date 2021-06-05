@@ -21,6 +21,7 @@ class MainApp extends StatelessWidget {
         ),
         child: MaterialApp(
           title: 'Internet Banking Simulator',
+          debugShowCheckedModeBanner: false,
           theme: AppTheme.themeData,
           onGenerateRoute: AppRoutes.onGenerateRoute,
         ),
