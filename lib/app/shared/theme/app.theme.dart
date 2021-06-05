@@ -13,6 +13,7 @@ abstract class AppTheme {
         accentColor: AppColors.primaryColor,
         appBarTheme: _appBarTheme,
         buttonTheme: _buttonTheme,
+        cardTheme: _cardTheme,
         inputDecorationTheme: _inputDecorationTheme,
       );
 
@@ -41,6 +42,10 @@ abstract class AppTheme {
         borderRadius: BorderRadius.circular(10),
       ),
     );
+  }
+
+  static CardTheme get _cardTheme {
+    return CardTheme(elevation: 2);
   }
 
   static InputDecorationTheme get _inputDecorationTheme {
