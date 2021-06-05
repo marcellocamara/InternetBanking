@@ -33,7 +33,7 @@ abstract class AppTheme {
   static ButtonThemeData get _buttonTheme {
     return ButtonThemeData(
       height: 48,
-      minWidth: 240,
+      minWidth: double.infinity,
       textTheme: ButtonTextTheme.primary,
       buttonColor: AppColors.primaryColor,
       disabledColor: Colors.grey[400],
