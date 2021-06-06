@@ -5,6 +5,7 @@ import '../../shared/theme/app.theme.dart';
 import 'components/santander_account.ui.dart';
 import 'components/santander_appbar.ui.dart';
 import 'components/santander_operations.ui.dart';
+import 'components/santander_people.ui.dart';
 
 /// Created by marcellocamara@id.uff.br on 04/06/2021.
 
@@ -16,12 +17,15 @@ class SantanderPage extends StatelessWidget {
       theme: AppTheme.santanderThemeData,
       home: Scaffold(
         appBar: const SantanderAppBar(),
-        body: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SantanderAccount(),
-            SantanderOperations(),
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SantanderAccount(),
+              SantanderOperations(),
+              SantanderPeople(),
+            ],
+          ),
         ),
       ),
     );
