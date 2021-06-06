@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../shared/constants/app.constants.dart';
 import '../../../shared/theme/app.colors.dart';
 import '../../settings/bloc/settings.bloc.dart';
 import '../../settings/bloc/settings.state.dart';
@@ -23,7 +24,8 @@ class SantanderAccountInfo extends StatelessWidget {
         ),
       ),
       padding: EdgeInsets.symmetric(
-        horizontal: MediaQuery.of(context).size.width * 0.05,
+        horizontal:
+            MediaQuery.of(context).size.width * AppConstants.santander_margin,
         vertical: 20,
       ),
       child: BlocBuilder<SettingsBloc, SettingsState>(

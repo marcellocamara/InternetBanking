@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../shared/constants/app.constants.dart';
 import '../../../shared/theme/app.assets.dart';
 import '../components/santander_operations_item.ui.dart';
 import '../models/santander_operation_item.model.dart';
@@ -44,8 +45,10 @@ class SantanderOperations extends StatelessWidget {
         itemBuilder: (_, index) {
           return Padding(
             padding: EdgeInsets.only(
-              left: index == 0 ? width * 0.05 : 0,
-              right: index == operationsListItems.length - 1 ? width * 0.05 : 0,
+              left: index == 0 ? width * AppConstants.santander_margin : 0,
+              right: index == operationsListItems.length - 1
+                  ? width * AppConstants.santander_margin
+                  : 0,
             ),
             child: SantanderOperationsItem(
               text: operationsListItems[index].name,
