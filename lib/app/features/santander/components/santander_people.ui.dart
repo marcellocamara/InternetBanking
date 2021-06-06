@@ -15,7 +15,7 @@ class SantanderPeople extends StatelessWidget {
       ),
       child: Card(
         child: Container(
-          height: 90,
+          height: 80,
           width: double.infinity,
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,

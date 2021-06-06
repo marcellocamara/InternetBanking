@@ -32,7 +32,7 @@ class SantanderAd extends StatelessWidget {
                   shape: BoxShape.circle,
                   border: Border.all(
                     color: AppColors.santander,
-                    width: 1.5,
+                    width: 1,
                   ),
                 ),
                 child: Center(
@@ -46,8 +46,7 @@ class SantanderAd extends StatelessWidget {
                 child: Text(
                   'Conheça o Shopping Santander:\nas melhores ofertas e benefícios.\nClique aqui!',
                   style: TextStyle(
-                    height: 1.5,
-                    fontSize: 15,
+                    height: 1.7,
                     color: Colors.grey[600],
                   ),
                 ),

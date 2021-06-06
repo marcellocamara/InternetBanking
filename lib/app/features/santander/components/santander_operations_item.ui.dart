@@ -12,21 +12,20 @@ class SantanderOperationsItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Container(
-        width: 130,
+        width: 110,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.only(top: 18, bottom: 15),
               child: SvgPicture.asset(
                 icon,
-                height: 28,
+                height: 26,
               ),
             ),
             Text(
               text,
               style: TextStyle(
-                fontSize: 15,
                 color: Colors.grey[700],
               ),
             ),
