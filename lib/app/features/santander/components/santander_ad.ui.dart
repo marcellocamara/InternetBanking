@@ -22,9 +22,12 @@ class SantanderAd extends StatelessWidget {
           child: Row(
             children: [
               Container(
-                height: 70,
-                width: 70,
-                margin: const EdgeInsets.all(15),
+                height: 60,
+                width: 60,
+                margin: const EdgeInsets.only(
+                  left: 20,
+                  right: 18,
+                ),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
@@ -35,7 +38,7 @@ class SantanderAd extends StatelessWidget {
                 child: Center(
                   child: SvgPicture.asset(
                     AppAssets.icon_santander_percent,
-                    width: 32,
+                    width: 26,
                   ),
                 ),
               ),
@@ -44,7 +47,7 @@ class SantanderAd extends StatelessWidget {
                   'Conheça o Shopping Santander:\nas melhores ofertas e benefícios.\nClique aqui!',
                   style: TextStyle(
                     height: 1.5,
-                    fontSize: 14,
+                    fontSize: 15,
                     color: Colors.grey[600],
                   ),
                 ),
