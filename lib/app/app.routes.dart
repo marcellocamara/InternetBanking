@@ -11,7 +11,7 @@ import 'features/splash/splash.page.dart';
 abstract class AppRoutes {
   static const splash = '/';
   static const settings = '/settings';
-  static const bank1 = '/bank1';
+  static const santander = '/santander';
   static const bank2 = '/bank2';
 
   static Route onGenerateRoute(RouteSettings routeSettings) {
@@ -20,7 +20,7 @@ abstract class AppRoutes {
         return MaterialPageRoute(builder: (_) => SplashPage());
       case settings:
         return CupertinoPageRoute(builder: (_) => SettingsPage());
-      case bank1:
+      case santander:
         return CupertinoPageRoute(builder: (_) => SantanderPage());
       case bank2:
         return CupertinoPageRoute(builder: (_) => Bank2Page());

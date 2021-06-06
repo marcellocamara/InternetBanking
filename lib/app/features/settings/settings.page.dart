@@ -88,9 +88,9 @@ class SettingsPage extends StatelessWidget {
                             onPressed: state.isCurrentLoading
                                 ? null
                                 : () => Navigator.of(context).pushNamed(
-                                      AppRoutes.bank1,
+                                      AppRoutes.santander,
                                     ),
-                            child: Text('Go to Bank 1'),
+                            child: Text('Go to Santander'),
                           ),
                         ),
                         const SizedBox(width: 20),
