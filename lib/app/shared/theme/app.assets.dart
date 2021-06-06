@@ -13,6 +13,7 @@ abstract class AppAssets {
   static const icon_santander_send = 'assets/icons/icon_santander_send.svg';
   static const icon_santander_receive = 'assets/icons/icon_santander_receive.svg';
   static const icon_santander_proof = 'assets/icons/icon_santander_proof.svg';
+  static const icon_santander_percent = 'assets/icons/icon_santander_percent.svg';
 
   /// Images - PNG
   static const image_santander_people = 'assets/images/image_santander_people.png';

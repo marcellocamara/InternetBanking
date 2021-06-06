@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../shared/theme/app.theme.dart';
 import 'components/santander_account.ui.dart';
+import 'components/santander_ad.ui.dart';
 import 'components/santander_appbar.ui.dart';
 import 'components/santander_operations.ui.dart';
 import 'components/santander_people.ui.dart';
@@ -21,9 +22,10 @@ class SantanderPage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              SantanderAccount(),
+              const SantanderAccount(),
               SantanderOperations(),
-              SantanderPeople(),
+              const SantanderPeople(),
+              const SantanderAd(),
             ],
           ),
         ),
