@@ -10,6 +10,12 @@ import 'bloc/settings.state.dart';
 /// Created by marcellocamara@id.uff.br on 03/06/2021.
 
 class SettingsPage extends StatelessWidget {
+  /// Closes keyboard and open the new page
+  void _openPage({@required BuildContext context, @required String routeName}) {
+    FocusScope.of(context)?.focusedChild?.unfocus();
+    Navigator.of(context).pushNamed(routeName);
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<SettingsBloc, SettingsState>(
@@ -87,10 +93,11 @@ class SettingsPage extends StatelessWidget {
                           child: OutlineButton(
                             onPressed: state.isCurrentLoading
                                 ? null
-                                : () => Navigator.of(context).pushNamed(
-                                      AppRoutes.santander,
+                                : () => _openPage(
+                                      context: context,
+                                      routeName: AppRoutes.santander,
                                     ),
-                            child: Text('Go to Santander'),
+                            child: Text('Open Santander'),
                           ),
                         ),
                         const SizedBox(width: 20),
@@ -98,10 +105,11 @@ class SettingsPage extends StatelessWidget {
                           child: OutlineButton(
                             onPressed: state.isCurrentLoading
                                 ? null
-                                : () => Navigator.of(context).pushNamed(
-                                      AppRoutes.bank2,
+                                : () => _openPage(
+                                      context: context,
+                                      routeName: AppRoutes.bank2,
                                     ),
-                            child: Text('Go to Bank 2'),
+                            child: Text('Open Bank 2'),
                           ),
                         ),
                       ],
