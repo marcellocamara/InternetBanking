@@ -10,6 +10,7 @@ class CustomTextFormFieldWidget extends StatelessWidget {
   final hintText;
   final initialValue;
   final suffixIcon;
+  final inputFormatters;
 
   CustomTextFormFieldWidget({
     @required this.enabled,
@@ -19,6 +20,7 @@ class CustomTextFormFieldWidget extends StatelessWidget {
     @required this.hintText,
     this.initialValue,
     this.suffixIcon,
+    this.inputFormatters,
   })  : assert(enabled != null),
         assert(onChanged != null),
         assert(keyboardType != null),
@@ -50,6 +52,7 @@ class CustomTextFormFieldWidget extends StatelessWidget {
           onChanged: onChanged,
           keyboardType: keyboardType,
           initialValue: initialValue,
+          inputFormatters: inputFormatters,
           textInputAction: TextInputAction.next,
           cursorColor: Theme.of(context).primaryColor,
           decoration: InputDecoration(

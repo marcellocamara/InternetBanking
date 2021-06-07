@@ -35,7 +35,7 @@ class SantanderAccountInfo extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Olá, ${state.name.isEmpty ? "Marcello" : state.name}',
+                'Olá, ${state.name.isEmpty ? "Desconhecido" : state.name}',
                 style: const TextStyle(
                   fontSize: 20,
                   color: Colors.white,
@@ -43,7 +43,7 @@ class SantanderAccountInfo extends StatelessWidget {
               ),
               const SizedBox(height: 5),
               Text(
-                'Ag ${state.accountNumber.isEmpty ? "0000" : state.accountNumber}  Cc 00000000-0',
+                'Ag ${state.agencyNumber.isEmpty ? "0000" : state.agencyNumber}  Cc ${state.accountNumber.isEmpty ? "00000000-0" : state.accountNumber}',
                 style: const TextStyle(
                   fontSize: 18,
                   color: Colors.white,

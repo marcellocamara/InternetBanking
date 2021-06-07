@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../app.routes.dart';
@@ -47,10 +48,27 @@ class SettingsPage extends StatelessWidget {
                   const SizedBox(height: 10),
                   CustomTextFormFieldWidget(
                     enabled: !state.isCurrentLoading,
+                    initialValue: state.agencyNumber,
+                    hintText: 'Agency number',
+                    labelText: 'Agency number',
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [
+                      BlacklistingTextInputFormatter(RegExp('[\\.|\\,]')),
+                    ],
+                    onChanged: (value) => context.read<SettingsBloc>().add(
+                          AgencyNumberChanged(agencyNumber: value),
+                        ),
+                  ),
+                  const SizedBox(height: 10),
+                  CustomTextFormFieldWidget(
+                    enabled: !state.isCurrentLoading,
                     initialValue: state.accountNumber,
                     hintText: 'Account number',
                     labelText: 'Account number',
-                    keyboardType: TextInputType.numberWithOptions(),
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [
+                      BlacklistingTextInputFormatter(RegExp('[\\.\\,\\ ]')),
+                    ],
                     onChanged: (value) => context.read<SettingsBloc>().add(
                           AccountNumberChanged(accountNumber: value),
                         ),
@@ -60,9 +78,12 @@ class SettingsPage extends StatelessWidget {
                     enabled: !state.isCurrentLoading,
                     initialValue:
                         state.balance == 0 ? '' : state.balance.toString(),
-                    hintText: 'R\$ 9.999,99',
+                    hintText: 'R\$ 1000.00',
                     labelText: 'Account balance',
                     keyboardType: TextInputType.number,
+                    inputFormatters: [
+                      BlacklistingTextInputFormatter(RegExp('[\\-\\,\\ ]')),
+                    ],
                     onChanged: (value) => context.read<SettingsBloc>().add(
                           BalanceChanged(balance: value),
                         ),

@@ -81,7 +81,7 @@ class SantanderAccountBalance extends StatelessWidget {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              'Saldo + Limite: ${balance.format(state.balance + 500)}',
+                              'Saldo + Limite: ${balance.format(state.balance + 0)}',
                               style: TextStyle(
                                 fontSize: 16,
                               ),

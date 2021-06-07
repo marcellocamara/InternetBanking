@@ -19,6 +19,8 @@ class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
   Stream<SettingsState> mapEventToState(SettingsEvent event) async* {
     if (event is NameChanged) {
       yield state.copyWith(name: event.name);
+    } else if (event is AgencyNumberChanged) {
+      yield state.copyWith(agencyNumber: event.agencyNumber);
     } else if (event is AccountNumberChanged) {
       yield state.copyWith(accountNumber: event.accountNumber);
     } else if (event is BalanceChanged) {

@@ -8,6 +8,12 @@ class NameChanged extends SettingsEvent {
   NameChanged({this.name});
 }
 
+class AgencyNumberChanged extends SettingsEvent {
+  final String agencyNumber;
+
+  AgencyNumberChanged({this.agencyNumber});
+}
+
 class AccountNumberChanged extends SettingsEvent {
   final String accountNumber;
 
