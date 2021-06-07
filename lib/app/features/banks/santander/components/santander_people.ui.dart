@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../shared/constants/app.constants.dart';
-import '../../../shared/theme/app.assets.dart';
+import '../../../../shared/constants/app.constants.dart';
+import '../../../../shared/theme/app.assets.dart';
 
 /// Created by marcellocamara@id.uff.br on 06/06/2021.
 

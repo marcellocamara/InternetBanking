@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../shared/constants/app.constants.dart';
-import '../../../shared/theme/app.colors.dart';
-import '../../settings/bloc/settings.bloc.dart';
-import '../../settings/bloc/settings.state.dart';
+import '../../../../shared/constants/app.constants.dart';
+import '../../../../shared/theme/app.colors.dart';
+import '../../../settings/bloc/settings.bloc.dart';
+import '../../../settings/bloc/settings.state.dart';
 
 /// Created by marcellocamara@id.uff.br on 05/06/2021.
 

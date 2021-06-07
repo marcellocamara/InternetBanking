@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'features/santander/santander.page.dart';
-import 'features/bank2/bank2.page.dart';
+import 'features/banks/santander/santander.page.dart';
+import 'features/banks/bank2/bank2.page.dart';
 import 'features/settings/settings.page.dart';
 import 'features/splash/splash.page.dart';
 

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../shared/theme/app.assets.dart';
+import '../../../../shared/theme/app.assets.dart';
 
 /// Created by marcellocamara@id.uff.br on 05/06/2021.
 

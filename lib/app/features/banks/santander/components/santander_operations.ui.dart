@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../shared/constants/app.constants.dart';
-import '../../../shared/theme/app.assets.dart';
-import '../components/santander_operations_item.ui.dart';
+import '../../../../shared/constants/app.constants.dart';
+import '../../../../shared/theme/app.assets.dart';
+import 'santander_operations_item.ui.dart';
 import '../models/santander_operation_item.model.dart';
 
 /// Created by marcellocamara@id.uff.br on 05/06/2021.

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../shared/constants/app.constants.dart';
-import '../../../shared/theme/app.assets.dart';
-import '../../../shared/theme/app.colors.dart';
+import '../../../../shared/constants/app.constants.dart';
+import '../../../../shared/theme/app.assets.dart';
+import '../../../../shared/theme/app.colors.dart';
 
 /// Created by marcellocamara@id.uff.br on 06/06/2021.
 

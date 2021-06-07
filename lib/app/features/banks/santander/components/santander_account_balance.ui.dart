@@ -4,11 +4,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
-import '../../../shared/constants/app.constants.dart';
-import '../../../shared/theme/app.assets.dart';
-import '../../../shared/theme/app.colors.dart';
-import '../../settings/bloc/settings.bloc.dart';
-import '../../settings/bloc/settings.state.dart';
+import '../../../../shared/constants/app.constants.dart';
+import '../../../../shared/theme/app.assets.dart';
+import '../../../../shared/theme/app.colors.dart';
+import '../../../settings/bloc/settings.bloc.dart';
+import '../../../settings/bloc/settings.state.dart';
 
 /// Created by marcellocamara@id.uff.br on 05/06/2021.
 

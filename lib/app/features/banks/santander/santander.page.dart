@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../shared/theme/app.theme.dart';
+import '../../../shared/theme/app.theme.dart';
 import 'components/santander_account.ui.dart';
 import 'components/santander_ad.ui.dart';
 import 'components/santander_appbar.ui.dart';
