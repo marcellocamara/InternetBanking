@@ -12,6 +12,8 @@ Exemplar de uma interface desenvolvida neste projeto:
 
 Para baixar o aplicativo exemplar [clique aqui](https://github.com/marcellocamara/InternetBanking/blob/master/assets/apk/internetbanking.apk?raw=true).
 
+Para baixar o projeto localmente, utilize a versão `1.17.5` do Flutter.
+
 ## Interfaces implementadas
 
 A tabela abaixo mostra quais interfaces (bancos) foram desenvolvidas e seu respectivo link para visualização da print screen em comparação com a interface original.
